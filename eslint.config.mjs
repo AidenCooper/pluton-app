@@ -1,7 +1,5 @@
 // https://typescript-eslint.io/getting-started
 
-// @ts-check
-
 import { defineConfig } from "eslint/config";
 
 import eslint from "@eslint/js";
@@ -21,9 +19,16 @@ export default defineConfig(
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: ["*.js"],
+          allowDefaultProject: ["*.config.js", "*.config.mjs"],
+          defaultProject: "tsconfig.json",
         },
       },
+      rules: {
+        "@typescript-eslint/no-require-imports": {
+          allowAsImport: true,
+        },
+      },
+      sourceType: "commonjs",
     },
   },
   {

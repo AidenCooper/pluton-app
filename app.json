@@ -1,5 +1,3 @@
-// https://docs.expo.dev/
-
 {
   "expo": {
     "name": "pluton-app",
@@ -11,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.plutonapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,7 +20,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.plutonapp"
     },
     "web": {
       "output": "static",

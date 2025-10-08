@@ -1,8 +1,18 @@
+<div align="center">
+
+# Pluton App
+
+![GitHub Release](https://img.shields.io/github/v/release/AidenCooper/pluton-app)
+[![CodeFactor](https://www.codefactor.io/repository/github/aidencooper/pluton-app/badge)](https://www.codefactor.io/repository/github/aidencooper/pluton-app)
+![GitHub License](https://img.shields.io/github/license/AidenCooper/pluton-app)
+
+</div>
+
 # Requirements
 
-brew install watchman -> R
+brew install watchman
 
-# Tools
+# Useful documentation
 
 React Native: https://reactnative.dev/docs/environment-setup
 
@@ -14,8 +24,6 @@ TSLint: https://typescript-eslint.io/getting-started
 
 Prettier: https://prettier.io/docs/
 
-# Commit format
+Jest: https://jestjs.io/docs/getting-started
 
-No scope
-
-https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md
+Commit Format: https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md
