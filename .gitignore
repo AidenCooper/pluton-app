@@ -1,4 +1,4 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# https://github.com/github/gitignore
 
 # dependencies
 node_modules/
@@ -41,3 +41,57 @@ app-example
 # generated native folders
 /ios
 /android
+
+# Local DEV config
+/.env
+
+# Claude local settings
+.claude/settings.local.json
+
+# Vscode
+.vscode
+
+# Fleet
+.fleet
+
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+android/app/src/main/java/com/expensify/chat/generated/
+.cxx/
+
+# VIM
+*.swp
+*.swo
+*~
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.cer
+*.p12
+*.mobileprovision
+ios-fastlane-json-key.json
+**/.xcode.env.local
+ios/tmp.xcconfig
+
+# Jest
+coverage/**/*

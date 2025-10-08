@@ -1,10 +1,35 @@
-// https://docs.expo.dev/guides/using-eslint/
-const { defineConfig } = require('eslint/config');
-const expoConfig = require('eslint-config-expo/flat');
+// https://typescript-eslint.io/getting-started
 
-module.exports = defineConfig([
-  expoConfig,
+// @ts-check
+
+import { defineConfig } from "eslint/config";
+
+import eslint from "@eslint/js";
+import tseslint from "typescript-eslint";
+
+import prettierConfig from "eslint-config-prettier";
+
+import testingLibrary from "eslint-plugin-testing-library";
+
+export default defineConfig(
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
+
+  prettierConfig,
+
   {
-    ignores: ['dist/*'],
+    languageOptions: {
+      parserOptions: {
+        projectService: {
+          allowDefaultProject: ["*.js"],
+        },
+      },
+    },
   },
-]);
+  {
+    files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+    plugins: {
+      testingLibrary,
+    },
+  }
+);
