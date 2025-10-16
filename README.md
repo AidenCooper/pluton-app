@@ -4,7 +4,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/aidencooper/pluton-app/badge)](https://www.codefactor.io/repository/github/aidencooper/pluton-app)
 ![GitHub License](https://img.shields.io/github/license/AidenCooper/pluton-app)
 
-Pluton is free and open source media server and journal to rate, review, and track movies and shows. It is an alternative to software applications like Plex and Jellyfin, with a personalized UI take and was originally built because Jellyfin does not offer a native AppleTV solution.
+Pluton is a free open source media server and journal to rate, review, and track movies and shows. It is an alternative to software applications like Plex and Jellyfin, with a personalized UI take and was originally built because Jellyfin does not offer a native AppleTV solution.
 
 This repository serves as Pluton's frontend applications. Built using React Native with the Expo framework, current platforms that are supported include: Android, Android TV, iOS, Apple TV, and the web.
 
