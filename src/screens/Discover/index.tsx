@@ -1,14 +1,14 @@
-import useTheme from "@/hooks/useTheme";
-import { Theme } from "@/types/theme";
+import { Theme } from "@/constants/Themes";
+import { useTheme } from "@/hooks/useTheme";
 import { Text, View, StyleSheet } from "react-native";
 
-export default function SettingsTab() {
+export default function DiscoverScreen() {
   const theme = useTheme();
   const styles = makeStyles(theme);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Settings</Text>
+      <Text style={styles.text}>Discover</Text>
     </View>
   );
 }
@@ -19,9 +19,11 @@ const makeStyles = (theme: Theme) =>
       flex: 1,
       justifyContent: "center",
       alignItems: "center",
+
       backgroundColor: theme.background,
     },
     text: {
       color: theme.primary,
+      fontSize: 50,
     },
   });

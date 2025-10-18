@@ -1,7 +1,7 @@
-import NavBarLayout from "@/components/layouts/NavBar";
+import NavBar from "@/components/NavBar";
 
 export default function TabsLayout() {
-  return <NavBarLayout />;
+  return <NavBar />;
 }
 
 // Primary:         #B0E0E6

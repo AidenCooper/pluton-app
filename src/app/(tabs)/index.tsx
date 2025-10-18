@@ -1,28 +1,5 @@
-import useTheme from "@/hooks/useTheme";
-import { Theme } from "@/types/theme";
-import { Text, View, StyleSheet } from "react-native";
+import DiscoverScreen from "@/screens/Discover";
 
-export default function HomeTab() {
-  const theme = useTheme();
-  const styles = makeStyles(theme);
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Home</Text>
-    </View>
-  );
+export default function DiscoverRoute() {
+  return <DiscoverScreen />;
 }
-
-const makeStyles = (theme: Theme) =>
-  StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: theme.background,
-    },
-    text: {
-      color: theme.primary,
-      fontSize: 50,
-    },
-  });
