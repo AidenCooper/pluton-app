@@ -2,13 +2,13 @@ import { Theme } from "@/constants/Themes";
 import { useTheme } from "@/hooks/useTheme";
 import { Text, View, StyleSheet } from "react-native";
 
-export default function DiscoverScreen() {
+export default function HomeScreen() {
   const theme = useTheme();
   const styles = makeStyles(theme);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Discover</Text>
+      <Text style={styles.text}>Home</Text>
     </View>
   );
 }

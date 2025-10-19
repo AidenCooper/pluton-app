@@ -1,5 +1,5 @@
-import DiscoverScreen from "@/screens/Discover";
+import HomeScreen from "@/screens/Home";
 
-export default function DiscoverRoute() {
-  return <DiscoverScreen />;
+export default function Index() {
+  return <HomeScreen />;
 }

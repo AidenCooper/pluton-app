@@ -1,5 +1,5 @@
 import ProfileScreen from "@/screens/Profile";
 
-export default function ProfileRoute() {
+export default function Profile() {
   return <ProfileScreen />;
 }

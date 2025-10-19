@@ -9,8 +9,8 @@ export default function NavBar() {
   return (
     <NativeTabs tintColor={theme.primary}>
       <NativeTabs.Trigger name="index">
-        <Label>Discover</Label>
-        <Icon sf={{ default: "safari", selected: "safari.fill" }} />
+        <Label>Home</Label>
+        <Icon sf={{ default: "house", selected: "house.fill" }} />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="media">
         <Label>Media</Label>

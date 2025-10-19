@@ -1,5 +1,5 @@
 import MediaScreen from "@/screens/Media";
 
-export default function MediaRoute() {
+export default function Media() {
   return <MediaScreen />;
 }
