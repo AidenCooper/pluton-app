@@ -1,6 +1,6 @@
 import { useTheme } from "@/hooks/useTheme";
 import { Tabs } from "expo-router";
-import { NavBarIcon } from "./Icon/NavBarIcon";
+import { NavBarIcon } from "./Icon";
 
 export default function NavBar() {
   const theme = useTheme();
