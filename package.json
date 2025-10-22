@@ -26,6 +26,7 @@
     "test": "npx jest --watchAll"
   },
   "dependencies": {
+    "@expo-google-fonts/josefin-sans": "^0.4.2",
     "@expo/vector-icons": "^15.0.2",
     "@react-native-tvos/config-tv": "^0.1.4",
     "@react-navigation/bottom-tabs": "^7.4.0",
