@@ -1,6 +1,6 @@
 import { Theme } from "@/constants/Themes";
 import { useTheme } from "@/hooks/useTheme";
-import { Text, View, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function HomeScreen() {
   const theme = useTheme();
