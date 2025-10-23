@@ -1,27 +1,25 @@
 // https://www.iamsajid.com/ui-colors/
 
-import { ColorValue } from "react-native";
-
 export type ColorPalette = {
   // Background
-  bgDark: ColorValue;
-  bg: ColorValue;
-  bgLight: ColorValue;
+  bgDark: string;
+  bg: string;
+  bgLight: string;
   // Text
-  text: ColorValue;
-  textMuted: ColorValue;
+  text: string;
+  textMuted: string;
   // Border
-  highlight: ColorValue;
-  border: ColorValue;
-  borderMuted: ColorValue;
+  highlight: string;
+  border: string;
+  borderMuted: string;
   // Action
-  primary: ColorValue;
-  secondary: ColorValue;
+  primary: string;
+  secondary: string;
   // Alert
-  danger: ColorValue;
-  warning: ColorValue;
-  success: ColorValue;
-  info: ColorValue;
+  danger: string;
+  warning: string;
+  success: string;
+  info: string;
 };
 
 export const DarkPalette: ColorPalette = {

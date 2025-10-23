@@ -1,13 +1,13 @@
 // sf icons: https://developer.apple.com/design/human-interface-guidelines/sf-symbols
 
+import { useTheme } from "@/hooks/useThemeStore";
 import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
-import { useTheme } from "@/hooks/useTheme";
 
 export default function NavBar() {
   const theme = useTheme();
 
   return (
-    <NativeTabs tintColor={theme.primary}>
+    <NativeTabs tintColor={theme.palette.warning}>
       <NativeTabs.Trigger name="index">
         <Label>Home</Label>
         <Icon sf={{ default: "house", selected: "house.fill" }} />

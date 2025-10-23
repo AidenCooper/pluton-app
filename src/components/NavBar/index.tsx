@@ -1,4 +1,5 @@
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@/hooks/useThemeStore";
+import { sp } from "@/utils/scaling";
 import { Tabs } from "expo-router";
 import { NavBarIcon } from "./Icon";
 
@@ -10,18 +11,19 @@ export default function NavBar() {
       screenOptions={{
         headerShown: false,
 
-        tabBarActiveTintColor: theme.primary,
+        tabBarActiveTintColor: theme.palette.primary,
+        tabBarInactiveTintColor: theme.palette.text,
 
         tabBarItemStyle: {
           alignItems: "center",
           flexDirection: "row",
         },
         tabBarLabelStyle: {
-          fontSize: 12,
+          fontSize: sp(32),
           paddingBottom: 0,
         },
         tabBarStyle: {
-          backgroundColor: theme.sidebar,
+          backgroundColor: theme.palette.bg,
 
           borderRadius: 50,
           borderTopWidth: 0,
