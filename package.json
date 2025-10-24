@@ -4,8 +4,7 @@
   "version": "1.0.0-alpha",
   "private": true,
   "engines": {
-    "node": "v22.20.0",
-    "npm": "11.6.2"
+    "node": "v22.20.0"
   },
   "expo": {
     "install": {
@@ -15,15 +14,16 @@
     }
   },
   "scripts": {
-    "android": "npx expo prebuild --clean && npx expo run:android",
-    "android:tv": "export EXPO_NO_GIT_STATUS=1 EXPO_TV=1 && npx expo prebuild --clean && npx expo run:android",
-    "ios": "npx expo prebuild --clean && npx expo run:ios --device",
-    "ios:tv": "export EXPO_NO_GIT_STATUS=1 EXPO_TV=1 && npx expo prebuild --clean && npx expo run:ios",
-    "web": "npx expo start --web --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web --dev-client",
+    "web:build": "expo export --platform web",
+    "prebuild": "expo prebuild --clean",
+    "prebuild:tv": "EXPO_TV=1 expo prebuild --clean",
     "doctor": "npx expo-doctor@latest && npx react-compiler-healthcheck@latest",
-    "format": "npx prettier . --write",
-    "lint": "npx expo lint",
-    "test": "npx jest --watchAll"
+    "format": "prettier . --write",
+    "lint": "expo lint",
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "@expo-google-fonts/josefin-sans": "^0.4.2",
@@ -32,7 +32,7 @@
     "@react-navigation/bottom-tabs": "^7.4.0",
     "@react-navigation/elements": "^2.6.3",
     "@react-navigation/native": "^7.1.8",
-    "expo": "54.0.19",
+    "expo": "^54.0.20",
     "expo-constants": "~18.0.9",
     "expo-font": "~14.0.9",
     "expo-haptics": "~15.0.7",
@@ -45,9 +45,8 @@
     "expo-web-browser": "~15.0.8",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-native": "npm:react-native-tvos",
+    "react-native": "npm:react-native-tvos@0.81.4-1",
     "react-native-gesture-handler": "~2.28.0",
-    "react-native-reanimated": "~4.1.1",
     "react-native-safe-area-context": "~5.6.0",
     "react-native-screens": "~4.16.0",
     "react-native-web": "~0.21.0",
@@ -69,5 +68,6 @@
     "react-test-renderer": "19.1.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.46.0"
-  }
+  },
+  "packageManager": "yarn@4.10.3"
 }

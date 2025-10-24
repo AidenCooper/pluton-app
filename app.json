@@ -5,7 +5,7 @@
     "scheme": "pluton",
     "version": "1.0.0-alpha",
     "orientation": "portrait",
-    "icon": "./src/assets/images/icon.png",
+    "icon": "./src/assets/images/myimage-tvos-760x760.png",
     "newArchEnabled": true,
     "userInterfaceStyle": "dark",
     "android": {
@@ -48,16 +48,16 @@
         "@react-native-tvos/config-tv",
         {
           "removeFlipperOnAndroid": true,
-          "androidTVBanner": "assets/images/tv_banner.png",
-          "androidTVIcon": "assets/images/tv_icon.png",
+          "androidTVBanner": "./src/assets/images/myimage-tvos-400x240.png",
+          "androidTVIcon": "./src/assets/images/myimage-tvos-760x760.png",
           "appleTVImages": {
-            "icon": "./assets/images/myimage-tvos-1280x768.png",
-            "iconSmall": "./assets/images/myimage-tvos-400x240.png",
-            "iconSmall2x": "./assets/images/myimage-tvos-800x480.png",
-            "topShelf": "./assets/images/myimage-tvos-1920x720.png",
-            "topShelf2x": "./assets/images/myimage-tvos-3840x1440.png",
-            "topShelfWide": "./assets/images/myimage-tvos-2320x720.png",
-            "topShelfWide2x": "./assets/images/myimage-tvos-4640x1440.png"
+            "icon": "./src/assets/images/myimage-tvos-1280x768.png",
+            "iconSmall": "./src/assets/images/myimage-tvos-400x240.png",
+            "iconSmall2x": "./src/assets/images/myimage-tvos-800x480.png",
+            "topShelf": "./src/assets/images/myimage-tvos-1920x720.png",
+            "topShelf2x": "./src/assets/images/myimage-tvos-3840x1440.png",
+            "topShelfWide": "./src/assets/images/myimage-tvos-2320x720.png",
+            "topShelfWide2x": "./src/assets/images/myimage-tvos-4640x1440.png"
           }
         }
       ]

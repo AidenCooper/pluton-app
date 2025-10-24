@@ -19,46 +19,42 @@ This repository serves as Pluton's frontend applications. Built using React Nati
 
 ## Recommended
 
-There is a strict Node.js and NPM version defined in the [package.json](./package.json) so [nvm](https://github.com/nvm-sh/nvm) is recommended to quickly use the proper node version via `nvm use` in the project directory folder.
+There is a strict Node.js version defined in the [package.json](./package.json) so [nvm](https://github.com/nvm-sh/nvm) is recommended to quickly use the proper node version via `nvm use` in the project directory folder.
 
-Package managers like [Homebrew](https://brew.sh/) for macOS/Linux and [Chocolatey](https://chocolatey.org/install) are recommended to install any dependencies needed
+Package managers like [Homebrew](https://brew.sh/) for macOS/Linux and [Chocolatey](https://chocolatey.org/install) are recommended to install any dependencies needed.
 
 Zulu is the preferred vendor for the JDK.
 
 ## Setup
 
-1. Install nvm to grab the necessary node version by: `nvm use`
-2. Install dependencies: `npm install`
-3. Run a specific platform: `npm run <platform>`
+- Setup Expo environment [here](https://docs.expo.dev/get-started/set-up-your-environment/?mode=development-build&platform=android&device=simulated&buildEnv=local)
 
-# Platform setup
+- `cd` into the project
 
-## Android and Android TV
+- Build for mobile
 
-### Prerequisites
+```sh
+yarn
+yarn prebuild # Creates a clean build to generate iOS and android native files
+yarn android # Run Android build
+yarn ios # Run iOS build
+```
 
-Follow the Expo guide [here](https://docs.expo.dev/get-started/set-up-your-environment/?mode=development-build&platform=android&device=simulated&buildEnv=local).
+- Build for TV
 
-### Run
+```sh
+yarn
+yarn prebuild:tv # Creates a clean build to generate tvOS and Android TV native files
+yarn android # Run Android TV build
+yarn ios # Run tvOS build
+```
 
-`npm run android`
+- Build for Web
 
-`npm run android:tv`
-
-## iOS and Apple TV
-
-### Prerequisites
-
-Follow the Expo guide [here](https://docs.expo.dev/get-started/set-up-your-environment/?mode=development-build&platform=ios&device=simulated&buildEnv=local).
-
-### Run
-
-`npm run ios`
-
-`npm run ios:tv`
-
-## Web
-
-`npm run web`
+```sh
+yarn
+yarn web # Run the web app on a development build
+yarn web:build # Builds the web bundle
+```
 
 ---

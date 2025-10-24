@@ -7,7 +7,7 @@ export default function NavBar() {
   const theme = useTheme();
 
   return (
-    <NativeTabs tintColor={theme.palette.warning}>
+    <NativeTabs tintColor={theme.palette.primary}>
       <NativeTabs.Trigger name="index">
         <Label>Home</Label>
         <Icon sf={{ default: "house", selected: "house.fill" }} />
