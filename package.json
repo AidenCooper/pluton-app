@@ -2,6 +2,7 @@
   "name": "pluton-app",
   "main": "expo-router/entry",
   "version": "1.0.0-alpha",
+  "license": "AGPL-3.0-only",
   "private": true,
   "engines": {
     "node": "v22.20.0"
@@ -68,6 +69,5 @@
     "react-test-renderer": "19.1.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.46.0"
-  },
-  "packageManager": "yarn@4.10.3"
+  }
 }
